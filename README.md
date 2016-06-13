@@ -1,5 +1,4 @@
 # Laravel-Guzzle
-[![Stable Status](https://poser.pugx.org/eleme/laravel-guzzle/v/stable.png)](https://packagist.org/packages/eleme/laravel-guzzle)
 
 laravel guzzle service provider
 
@@ -10,3 +9,48 @@ laravel guzzle service provider
     "eleme/laravel-guzzle": "~0.1"
 }
 ```
+
+
+## Register Service Provider
+
+*/configs/app.php*
+
+```php
+    ...
+    'providers' => [
+
+        /*
+         * Laravel Framework Service Providers...
+         */
+        ...
+
+        /*
+         * Application Service Providers...
+         */
+        ...
+        'Zikaka\Laravel\Providers\Guzzle'
+    ],
+```
+
+
+## Enable Facade
+
+*/configs/app.php*
+
+```php
+    ...
+    'aliases' => [
+        ...
+        'Guzzle' => 'Zikaka\Laravel\Facades\Guzzle'
+    ],
+```
+
+## Usage
+
+### Send request
+
+```php
+
+  $response = \Guzzle::get('https://google.com');
+```
+

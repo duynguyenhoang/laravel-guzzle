@@ -1,5 +1,5 @@
 <?php
-namespace Eleme\Laravel\Facades;
+namespace Zikaka\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,5 +1,5 @@
 {
-    "name": "eleme/laravel-guzzle",
+    "name": "zikaka/laravel-guzzle",
     "description": "laravel guzzle service provider",
     "keywords": ["laravel", "guzzle", "http"],
     "license": "MIT",
@@ -7,11 +7,15 @@
         {
             "name": "Hongbo Tang",
             "email": "thbourlove@gmail.com"
+        },
+        {
+            "name": "Dyt Nguyen",
+            "email": "nhduy88@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "~4.0",
+        "php": ">=5.5.0",
+        "illuminate/support": "~5.0",
         "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
@@ -19,8 +23,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Eleme\\Laravel\\": "src/",
-            "Eleme\\Laravel\\Tests\\": "tests/"
+            "Zikaka\\Laravel\\": "src/",
+            "Zikaka\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+        "dev-master": "1.0-dev"
         }
     }
 }

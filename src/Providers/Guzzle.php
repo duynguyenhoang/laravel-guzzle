@@ -1,5 +1,5 @@
 <?php
-namespace Eleme\Laravel\Providers;
+namespace Zikaka\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use GuzzleHttp\Client;
